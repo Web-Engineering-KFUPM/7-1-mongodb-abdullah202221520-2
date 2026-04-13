@@ -185,8 +185,14 @@
  */
 
 // import mongoose
+import mongoose from "mongoose";
 
 // establish connection
+const uri = "mongodb+srv://xepher:test123@cluster0.jp30v01.mongodb.net/"; // Replace with your actual connection string
+
+mongoose.connect(uri)
+   .then(() => console.log("✅ Connected to MongoDB via Mongoose!"))
+   .catch((err) => console.error("❌ Failed to connect to MongoDB:", err));
 
 
 // define schema
