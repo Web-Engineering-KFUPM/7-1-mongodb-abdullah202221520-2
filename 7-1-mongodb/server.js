@@ -188,7 +188,7 @@
 import mongoose from "mongoose";
 
 // establish connection
-const uri = "mongodb+srv://xepher:test123@cluster0.jp30v01.mongodb.net/"; // Replace with your actual connection string
+const uri = "mongodb+srv://xepher:test123@cluster0.jp30v01.mongodb.net/testDB"; // Replace with your actual connection string
 
 mongoose.connect(uri)
    .then(() => console.log("✅ Connected to MongoDB via Mongoose!"))
